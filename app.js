@@ -1,9 +1,23 @@
-
+ 
 window.addEventListener("scroll",function(){
     var myNav = document.querySelector("nav");
     myNav.classList.toggle("sticky", window.scrollY>80);
-  })
+  });
 
-//  below this form validation
+//  below the line code of responsive small dive for navbar menu;
 
-var name = document.querySelector("#form1").val;
+
+var menu = document.querySelector(".menu-slide");
+var menuopenBtn = document.querySelector(".menu-btn-icon");
+var menucloseBtn = document.querySelector(".menu-censelbtn-icon");
+
+menuopenBtn.addEventListener("click", function(){
+  menu.classList.add("active");
+  menuopenBtn.classList.add("hide");
+});
+
+menucloseBtn.addEventListener("click", function(){
+  menu.classList.remove("active");
+  menuopenBtn.classList.remove("hide");
+});
+ 

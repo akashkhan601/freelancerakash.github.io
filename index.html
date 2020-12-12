@@ -13,6 +13,8 @@
 
  <link rel="stylesheet" href="media-Quary.css">
  <script src="https://kit.fontawesome.com/f32a34cc34.js" crossorigin="anonymous"></script>
+
+ 
   <link rel="stylesheet" href="magnific-popup/magnific-popup.css"> 
   <link rel="stylesheet" href="owl-carousel-css/owl.carousel.min.css">
   <link rel="stylesheet" href="owl-carousel-css/owl.theme.default.min.css">
@@ -21,55 +23,87 @@
 
 <body>
 
+  <!-- NavBar start -->
   
-  
-  <nav class="navbar  navbar-expand-lg" id="mainNav">
-    <div class="container"> 
-    <a href="#" class="navbar-brand ">LOGO</a>
-
-<span id="menu-bar" type="button" class="navbar-toggler mennu-button-div"  data-toggle="collapse" data-target="#navbarUl"><i class="fas fa-bars"></i></span>
-
-<div class="collapse navbar-collapse" id="navbarUl"> 
-<ul class="navbar-nav text-center   ml-auto" >
-  <li class="nav-item menu-color active">
-    <a href="#" class="nav-link " id="menu12">Home</a>
-  </li>
-
-  <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle about-color" data-toggle="dropdown"  id="menu12" >About</a>
-    <div id="subMenu" class="dropdown-menu">
-    <a href="#about-section" class="dropdown-item smoth-scroll">About me</a>
-    <a href="#slider-sec" class="dropdown-item">MY Photography</a>
-    <a href="#inspiration-sec" class="dropdown-item">MY inspiration</a>
-    <a href="#my-skill-sec" class="dropdown-item">MY skill</a>
-    <a href="#my-image-gallary" class="dropdown-item">My Gallary</a>
-    <a href="#myfavSinger" class="dropdown-item">MY favorite singer</a>
-      
-    </div>
-  </li>
-
-  <li class="nav-item menu-color">
-    <a href="#my-services" class="nav-link"  id="menu12">Services</a>
-  </li>
-
-  <li class="nav-item menu-color">
-    <a href="#potfolio-sec" class="nav-link"  id="menu12">Portfolio</a>
-  </li>
-
-  <li class="nav-item menu-color">
-    <a href="#testimonial-sec" class="nav-link"  id="menu12">Testimonial</a>
-  </li>
-
-  <li class="nav-item menu-color">
-    <a href="#contact-section" class="nav-link"  id="menu12">Contact</a>
-  </li>
-    
-</ul>
-</div>
-</div>
-  </nav>
  
+<nav class="nav-bar">
+  <div class="nav-content">
+   
+    <div class="logo"><span>Coder</span>Akash</div>
+
+
+    <!-------------- start blow small device menu-bar ------------------>
+
+    <div class="menu-slide">
+
+      <div class="menu-icon menu-censelbtn-icon">
+        <i class="fas fa-times"></i>
+      </div>
+<ul>
+  <li><a href="#">HOME</a></li>
+  <li class="about">ABOUT<i class="menudownIcon fas fa-chevron-down"></i></li>
+
+<div class="menu-sub">
+  <li><a href="#about-section">About me</a></li>
+  <li><a href="#slider-sec">MY Photography</a></li>
+  <li><a href="#inspiration-sec">MY inspiration</a></li>
+  <li><a href="#my-skill-sec">MY skill</a></li>
+  <li><a href="#my-image-gallary">My Gallary</a></li>
+  <li><a href="#my-blog-sec">My Blog</a></li>
+
+  <li><a href="#myfavSinger">My  favorite singer</a></li>
+</div>
+
+  <li><a href="#my-services">SERVICES</a></li>
+  <li><a href="#potfolio-sec">PORTFOLIO</a></li>
+  <li><a href="#testimonial-sec">TESTIMONIAL</a></li>
+  <li><a href="#contact-section">CONTACT</a></li>
+</ul>
+    </div>
+
+    <!-------------- End up small device menu-bar ------------------>
+
+
+    <!-------------- start blow menu is large lapotop dekstop menu bar or navbar ------------------>
+
+    <ul class="menu-item">
+      
+      <li class="marginA"><a href="#" class="active">HOME</a></li>
+      <li class="sub-menu" style="cursor: pointer;"><a>ABOUT <i class="fas fa-chevron-down"></i></a>
+      
+      <ul class="sub-menu2">
+        <li><a href="#about-section">About me</a></li>
+        <li><a href="#slider-sec">MY Photography</a></li>
+        <li><a href="#inspiration-sec">MY inspiration</a></li>
+        <li><a href="#my-skill-sec">MY skill</a></li>
+        <li><a href="#my-image-gallary">My Gallary</a></li>
+        <li><a href="#my-blog-sec">My Blog</a></li>
+        <li><a href="#myfavSinger">My favorite singer</a></li>
+      </ul>
+      
+      </li>
+      <li><a href="#my-services">SERVICES</a></li>
+      <li><a href="#potfolio-sec">PORTFOLIO</a></li>
+      <li><a href="#testimonial-sec">TESTIMONIAL</a></li>
+      
+      <li><a href="#contact-section">CONTACT</a></li>
+    </ul>
+    
+
+    <div class="menu-icon menu-btn-icon">
+      <i class="fas fa-bars"></i>
+    </div>
+    <!-- -------------End up menu is large lapotop dekstop menu bar or navbar ---------------------------->
+
+  </div>
+</nav>
+
+
+  <!-- End up NavBar -->
+
+  <!--      -->
   <section class="banner water animatedH">
+    
 <div class="container">
 
   <div class="banner-titel">
@@ -93,7 +127,7 @@
 </div>
 
 <div class="banner-hear-btn">
-  <a href="#">Hear Me</a>
+  <a href="#avalable-freelancing">Hear Me</a>
 </div>
 
 <div class="banner-scoial-icon-btn">
@@ -106,6 +140,8 @@
 </div>
 
 </div>
+
+ 
 </section>
 
  
@@ -169,7 +205,7 @@
 <section id="slider-sec">
 
   <div class="silder-titel">
-    <h1 class="display-4">My Photography & Editing</h1>
+    <h1 class="display-4">My <span class="photography-span">Photography</span> <span class="editing-span">& Editing</span></h1>
    
   </div>
 
@@ -239,7 +275,7 @@
 <!----------------------------------------------------------start the services section--- --------------------------------->
 
 <section id="my-services">
-<h1 class="display-4 text-light">MY SERVICES</h1>
+<h1 class="display-4 text-light">MY <span>SERVICES</span></h1>
 <div class="container">
   <div class="row ">
 
@@ -436,9 +472,9 @@
 
 <section id="awred-counter-sec">  
   <div class="awrd-titel">
-    <h1>My Works Journy</h1>
+    <h1>My Work Life</h1>
     <div class="awrd-titel-para">
-      <p>I never sleep when i'm tired, I sleep only when i'm Done!</p>
+      <p>Some memorable moment with my work journey</p>
     </div>
     <p></p>
   </div>
@@ -1311,17 +1347,21 @@
   <marquee behavior="scroll" direction="right">Thanks for visit my website --- have a good day all of my favorite visitor</marquee>
 </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 <script src="bootstrap-jquery/my-jquery-min.js"></script>
-  <script src="bootstrap-js/jquery-slim.min.js"></script>
-  <script src="bootstrap-js/popper.min.js"></script>
-  <script src="bootstrap-js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
   <script src="magnific-popup/jquery.magnific-popup.min.js"></script> 
   <script src="mixitup plugin/mixitup.min.js"></script>
   <script src="water effact jquery plugin/jquery.ripples-min.js"></script>
   <script src="app.js"></script>
   <script src="animated-headline/jquery.animatedheadline.min.js"></script>
   <script src="owl-carousel-js/owl.carousel.min.js"></script>
+
+
   <script>
     var containerE1 = document.querySelector('.port-items');
 var mixer = mixitup(containerE1) 

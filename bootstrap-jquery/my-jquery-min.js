@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
 
+
+
   $(function() {
     $('.animate-clip').animatedHeadline({
         animationType: 'clip',
@@ -67,9 +69,18 @@ $(document).ready(function() {
 
     $(function() {
       $('.animatedH').animatedHeadline({
-          animationType: 'rotate-1'
-      });
-  })
+          animationType: 'clip'
+      },2000);
+  });
+
+ 
+
+  // below the line responsive navbar menu about link slideToggle code;
+
+  $(".about").click(function(){
+    $(".menu-sub").slideToggle(1000)
+});
+
 
   });
 

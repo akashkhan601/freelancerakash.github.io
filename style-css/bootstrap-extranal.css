@@ -7,87 +7,318 @@ html{
   scroll-behavior: smooth;
 }
 
+/* start the new navbar style code */
 
 
-#mainNav{
-     position: fixed; 
-    background-color: transparent;
-    padding-top: 20px;
-    padding-bottom: 20px;
-     z-index: 1; 
-    width: 100%;
-    color: #fff !important;
-    transition: 0.6s ease;
+
+.nav-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 50px;
+  background: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  display: table;
+  z-index: 100000;
+  transition: 0.6s ease;
 }
 
+nav .logo{
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 26px;
+  float: left;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+nav .logo span{
+  color: #00fff3;
+  font-weight: 900;
+  font-family: arial black;
+}
+
+nav .menu-item{
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+
+nav .menu-item li{
+  list-style: none;
+  position: relative;
+  
+}
+
+.sub-menu2{
+  list-style: none;
+  width: 290px;
+  position: absolute;
+  top: unset;
+  background: cornflowerblue;
+   border-top: 1px solid #ddd; 
+
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 1s ;
+  visibility: hidden;
+}
+
+.sub-menu:hover .sub-menu2{
+  visibility: visible;
+  transform: scaleY(1);
+}
+
+.sub-menu2 li{
+  float: none;
+  transition: all 1s ease;
+}
+.sub-menu2 li:hover{
+  padding-left: 45px;
+  background: #fff;
+}
+
+
+.sub-menu2 li a{
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  text-transform: capitalize;
+  font-family: monospace !important;
+  color: black !important;
+}
+
+.fa-chevron-down{
+  font-size: 14px;
+  padding-left: 8px;
+}
+
+nav .menu-item li a{
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  
+  font-family: arial;
+  transition: all 0.6s ease;
+}
+
+nav .menu-item li a:hover,
+nav .menu-item li a.active{
+  color: red;
+  
+}
+
+.menu-btn-icon{
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-censelbtn-icon {
+position: absolute;
+color: white;
+top: 21px;
+right: 30px;
+font-size: 24px;
+display: none;
+cursor: pointer;
+
+}
+
+.menu-censelbtn-icon i{
+  transition:  1s ease;
+}
+
+.menu-censelbtn-icon i:hover{
+color: red;
+}
+
+nav .menu-slide{
+  display: none;
+  position: relative;
+}
+
+
+.menu-slide ul{
+  margin-top: 85px;
+   
+  list-style: none;
+  
+}
+
+.menu-slide ul li{
+ padding: 15px 0;
+ padding-left: 20px;
+ transition: all 0.5s ease;
+ cursor: pointer;
+ letter-spacing: 3px;
+ 
+}
+
+.menu-slide ul li a{
+   color: #fff; 
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+ transition: all 1s ease;
+display: block;
+}
+
+.about{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.about i {
+  position: absolute !important;
+  left: 88% !important;
+    
+}
+
+
+
+.menu-slide ul li:hover{
+  background: rgb(223, 83, 28);
+}
+
+.menu-sub li a {
+  
+  padding: 2px 0;
+  transition: all 1s ease;
+}
+
+.menu-sub li a:hover{
+  padding-left: 50px;
+}
+
+.menu-sub{
+background:rgb(7 15 53);
+}
+
+
+.menu-sub li{
+  border-bottom: 1px dotted #fff;
+}
+
+
+.menu-sub li a{
+  color: #fff !important;
+}
+
+.menu-sub li:hover{
+  background: #fff !important;
+  color: red !important;
+}
+
+
+.menu-sub li a:hover{
+ 
+  color: blue !important;
+}
+
+.menu-sub li a{
+  display: block !important;
+}
+
+.menu-sub{
+  display: none;
+}
+
+.menudownIcon{
+  color: #fff;
+  transition: 0.8s ease;
+}
+
+.menudownIcon:hover{
+  color:blue;
+}
+
+ol, ul {
+   padding-left: 0; 
+}
+
+li.sub-menu {
+  color: white;
+}
+
+li.sub-menu:hover {
+  color: red;
+}
+
+
+
+/* end up new navbar style code */
+
+
+
+
+
+
 nav.sticky{
-  padding-top: 22px !important;
-  padding-bottom: 22px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
   background: #ffffff !important;
   transition: 0.6s ease;
   box-shadow: 0 20px 40px rgba(0,0,0,.2);
   }
 
-  nav.sticky ul li a{
+  nav.sticky .menu-item li a{
     color: #000;
 }
 
-nav.sticky #menu-bar i{
+nav.sticky .menu-item li a{
+  transition: all 1s ease;
+  font-family: arial;
+}
+
+nav.sticky .menu-item li a:hover{
+color: red;
+
+}
+
+nav.sticky .menu-btn-icon i{
 color: #000;
 }
 
-#sml-device-btn{
-    background: black !important;
-    color:white !important;
+nav.sticky .sub-menu a{
+  color: #000;
 }
 
-#subMenu {
-     background: #45ca86; 
-    width: 334px;
-       top: 57px;
-    transform: scaleY(1);
-    opacity: 1;
-    transition: all 1s;
-     border-radius: 3px; 
-}
-  
-
-div#subMenu  a{
-    transition: all 1s;
-    font-weight: 600;
-    font-family: cursive;
-     /* background: black;  */
-    width: 100%;
-    padding: 8px;
-     /* color: white;  */
-    display: block;
-    left: -15px;
-    padding: 13px;
-    
+nav.sticky .menu-slide ul li{
+  color: #fff !important;
 }
 
-div#subMenu a:hover{
-    padding-left: 50px;
-    color: red;
-    background: white;
-  
+nav.sticky .sub-menu2{
+  top: 120%;
 }
 
-#menu12{
-margin: 0 10px;
-font-size: 16px ;
- text-transform: uppercase; 
-letter-spacing: 2px;
-/* color: white; */
-font-weight: 400;
-transition: 1s ease;
-font-weight: 600;
+nav.sticky .logo{
+  color: #000;
 }
 
-#menu12:hover{
-  color: red;
-  
+nav.sticky .logo span{
+  color: rgb(5 98 236);
 }
+
+
+
+
+
+
+
 
 .banner{
     position: relative;
@@ -97,26 +328,8 @@ font-weight: 600;
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
+      background-attachment: fixed;
       }
-
-
- #menu-bar i{
-   font-size: 28px;
- }
-
-
-
-.menu-color a{
-  color: #fff;
-}
-
-.about-color{
-  color: #fff;
-}
-
-.active a{
-  color: red;
-} 
 
 
 .my-animated-headline{
@@ -137,7 +350,6 @@ font-weight: 600;
 
 .banner-titel h1{
   color: #fff;
-  /* font-size: 66px; */
   font-weight: 800;
  letter-spacing: 10px; 
 }
@@ -149,14 +361,29 @@ font-weight: 600;
   font-weight: 900;
 }
 
-
-
-span.ah-headline.rotate-1 {
-  font-size: 28px;
-  color: #fff;
-  font-weight: 500;
+span.ah-headline.clip.is-full-width {
+  color: white;
+  font-size: 23px;
+  font-weight: 100;
   font-family: monospace;
 }
+
+.ah-words-wrapper{
+  color: #09e2ec;
+  font-weight: bolder;
+}
+
+.ah-headline.clip 
+.ah-words-wrapper::after{
+ content: "";
+ position: absolute;
+ top: 0;
+ right: 0;
+ width: 2px;
+ height: 100%;
+ background-color: #fff !important;
+}
+
 
 
 .banner-contact-btn{
@@ -227,6 +454,7 @@ span.ah-headline.rotate-1 {
 }
 
 .banner-scoial-icon-btn i{
+  color: #fff;
   margin: 0px 13px;
   border: 1px solid #fff;
   padding: 15px;
@@ -341,7 +569,23 @@ height: 100%;
 .silder-titel{
   text-align: -webkit-center;
     margin-bottom: 50px;
-    /* padding-top: 130px; */
+   
+}
+
+.display-4 {
+    
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: arial;
+}
+
+.photography-span{
+  color: red;
+  font-family: system-ui;
+}
+.editing-span{
+  color: #262865;
+  font-family: cursive;
 }
 
 #slider-sec{
@@ -426,6 +670,11 @@ height: 100%;
 text-align: center;
 margin-bottom: 30px;
 font-family: auto;
+}
+
+#my-services h1 span{
+  color: #05f9c1;
+  font-weight: 800;
 }
 
 #my-services h1::after{
@@ -694,20 +943,6 @@ h3.ati-vai{
 }
 
 
-
- /*  
-
-@media  screen and (max-width: 280px){
-  .pogress-img img{
-    width: 200px ;
-    
-  }
-  .pogress-img{
-    text-align: left;
-  }
-}
- 
-*/
 
 /* ------------------------------------------- End up the skill bar section style---------------------------*/
 
@@ -1232,8 +1467,9 @@ button.owl-dot {
   border: 2px solid white;
 }
 
-.freelaneracount h3, i{
-  color: white;
+.freelaneracount h3,
+.freelaneracount i{
+   color: white; 
   font-size: 20px;
 }
 
@@ -1375,6 +1611,7 @@ transition: all 1s ease;
 }
 
 .addressBox i{
+  color: #fff;
  font-size: 35px;
  margin-top: 15px;
 }
@@ -1537,6 +1774,7 @@ footer{
 }
 
 .footer-socail-icon-btn i{
+  color: #fff;
   margin: 0 15px;
  transition: 1s ease;
  padding: 15px ;

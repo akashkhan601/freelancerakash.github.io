@@ -123,11 +123,6 @@ margin-top: 20px;
     }
 
 
- 
-   
-
-
-
 @media (min-width :768px){
     #rightContact{
         width: 212px; 
@@ -491,7 +486,7 @@ margin-top: 20px;
          .footer-socail-icon-btn i{
              margin: 0 12px;
              padding: 0; 
-            background: none; 
+            background: none !important; 
          }
         } 
 
@@ -514,7 +509,7 @@ margin-top: 20px;
 
         @media(min-width: 576px){
             .banner-titel h1{
-                font-size: 19px;
+                font-size: 21px;
             }
         }
 
@@ -535,12 +530,12 @@ margin-top: 20px;
 
         @media(max-width: 575px){
             .banner-titel h1{
-                font-size: 26px;
+                font-size: 20px;
                 letter-spacing: 0px;
             }
         }
 
-       
+       /* 
 
         @media(max-width: 414px){
             .banner-titel h1{
@@ -557,6 +552,8 @@ margin-top: 20px;
                 letter-spacing: 0px;
             }
         }
+
+         */
 
         /* end up the baaner titel media query */
 
@@ -581,49 +578,60 @@ margin-top: 20px;
         }
 
 
-        @media(min-width: 1200px){
-            span.ah-headline.rotate-1{
-                 font-size: 28px; 
-            }
-        }
+       
 
+
+        @media(max-width: 767px){
+            span.ah-headline.clip.is-full-width{
+                font-size: 15px;
+              }
+
+            .my-animated-headline{
+                position: absolute;
+                /* text-align: center; */
+                top: 50%;
+                left: 45%;
+                transform: translate(-50%, -50%);
+              }
+
+             
+        }
 
       
 
         @media(max-width: 575px){
-            span.ah-headline.rotate-1{
-                 font-size: 14px; 
-            }
+            span.ah-headline.clip.is-full-width{
+                font-size: 15px;
+              }
 
             .my-animated-headline{
                 position: absolute;
                 /* text-align: center; */
-                top: 49%;
-                left: 50%;
+                top: 50%;
+                left: 45%;
                 transform: translate(-50%, -50%);
               }
+
+             
         }
 
+         /*
         @media(max-width: 500px){
             span.ah-headline.rotate-1{
                  font-size: 11px; 
             }
-
-            .banner-titel h1{
-                font-size: 16px;
-                
-            }
+          
 
             .my-animated-headline{
                 position: absolute;
-                /* text-align: center; */
+                 text-align: center; 
                 top: 47%;
                 left: 50%;
                 transform: translate(-50%, -50%);
               }
         }
-
-
+        
+*/
 
       
 
@@ -633,10 +641,7 @@ margin-top: 20px;
             span.ah-headline.rotate-1{
                  font-size: 17px; 
             }
-            .banner-titel h1{
-                font-size: 16px;
-                
-            }
+           
             
         }
 
@@ -777,8 +782,9 @@ margin-top: 20px;
 
 @media(max-width: 575px){
     .banner-scoial-icon-btn i{
-        margin: 0 4px;
-    font-size: 13px;
+        margin: 0 3px;
+        font-size: 16px;
+        padding: 7px;
 }
 
 
@@ -786,4 +792,82 @@ margin-top: 20px;
 
         /*end up the banner icon baton  media query */
 
+
+/* start below the responsive navbar media query */
+
+
+
+@media(max-width :991px){
+    
+    nav .nav-bar{
+         padding: 0 20px;
+     }
+  
+     .menu-btn-icon{
+         display: block;
+     }
+      
+     .menu-icon.hide{
+         display: none;
+     }
+  
+ 
+  nav .menu-slide{
+ 
+     position: fixed;
+     top: 0; 
+     left: -100%; 
+     height: 100vh; 
+     width: 100%; 
+          max-width: 400px;      
+    background: #222;
+        display: block;  
+       transition: all 0.6s ease;
+ 
+  }
+ 
+    nav .menu-item{
+          display: none; 
+      
+     }
+ 
+     nav .menu-slide.active{
+         left: 0%;
+     }
+ 
+ 
+ 
+     .menu-censelbtn-icon{
+         display: block;
+       
+ 
+     }
+   
+    nav .marginA{
+         margin-top: 48px;
+     }
+  
+ 
+     nav ul li ul li{
+         width: 100%;
+     }
+ 
+     .fa-chevron-down{
+       left: 80% !important;
+       position: relative !important;
+     }
+ }
+ 
+ @media(max-width: 575px){
+     nav .menu-item{
+         max-width: 100%;
+     }
+ }
+ 
+ 
+ @media(max-width :1200px){
+     .nav-bar{
+        padding: 0 25px;
+    }
+ }
 
