@@ -10,14 +10,17 @@ window.addEventListener("scroll",function(){
 var menu = document.querySelector(".menu-slide");
 var menuopenBtn = document.querySelector(".menu-btn-icon");
 var menucloseBtn = document.querySelector(".menu-censelbtn-icon");
+ var bodyTag = document.querySelector(".myBody")
 
 menuopenBtn.addEventListener("click", function(){
   menu.classList.add("active");
   menuopenBtn.classList.add("hide");
+  bodyTag.classList.add("scroll-hide");
 });
 
 menucloseBtn.addEventListener("click", function(){
   menu.classList.remove("active");
   menuopenBtn.classList.remove("hide");
+  bodyTag.classList.remove("scroll-hide");
 });
  

@@ -810,6 +810,11 @@ margin-top: 20px;
      .menu-icon.hide{
          display: none;
      }
+
+    .myBody.scroll-hide{
+        overflow-y: hidden; /* Hide vertical scrollbar */
+       
+      }
   
  
   nav .menu-slide{
@@ -819,11 +824,11 @@ margin-top: 20px;
      left: -100%; 
      height: 100vh; 
      width: 100%; 
-          max-width: 400px;      
+     max-width: 400px;       
     background: #222;
         display: block;  
        transition: all 0.6s ease;
- 
+     overflow-y: auto;
   }
  
     nav .menu-item{
@@ -860,6 +865,9 @@ margin-top: 20px;
  
  @media(max-width: 575px){
      nav .menu-item{
+         max-width: 100%;
+     }
+     nav .menu-slide{
          max-width: 100%;
      }
  }
