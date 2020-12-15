@@ -1,22 +1,5 @@
 
-/* this is navbar media query */
 
-@media (max-width : 991px){
-#navbarUl{
-background: white;
-margin-top: 20px;
-
-}
-}
-
-@media (max-width : 991px){
-    #menu12{
-    color: black;
-    
-    }
-    }
-
-     /* End up navbar media query */
 
   /* This is About section media query */
  
@@ -210,25 +193,6 @@ margin-top: 20px;
         font-size: 52px;
     }
 }
-
-
-/* 
-@media(min-width : 280px){
-    .pogress-img img{
-        width: 100px;
-    }
-}
- */
-
-
-/* 
-
-@media(max-width : 430px){
-    .pogress-img{
-        width: 290px;
-    }
-
-     */
 
      /* End up  the Skills section media query */
 
@@ -491,7 +455,7 @@ margin-top: 20px;
         } 
 
 
-        /* submenu meidea query */
+        /* submenu meidea query 
         
        @media(max-width: 320px){
            #subMenu{
@@ -499,30 +463,29 @@ margin-top: 20px;
            }
        }
 
+       */
         /* banner titel media query */
 
-        @media(min-width: 1200px){
-            .banner-titel h1{
-                font-size: 58px;
-            }
-        }
+      
 
         @media(min-width: 576px){
             .banner-titel h1{
-                font-size: 21px;
+                font-size: 30px;
+                letter-spacing: 5px;
             }
         }
 
         @media(min-width: 768px){
             .banner-titel h1{
-                font-size: 34px;
+                font-size: 44px;
+                letter-spacing: 5px;
             }
         }
 
         @media(min-width: 1200px){
             .banner-titel h1{
-                font-size: 58px;
-                letter-spacing: 18px;
+                font-size: 55px;
+                letter-spacing: 15px;
             }
         }
 
@@ -530,151 +493,56 @@ margin-top: 20px;
 
         @media(max-width: 575px){
             .banner-titel h1{
-                font-size: 20px;
-                letter-spacing: 0px;
+                font-size: 39px;
+                letter-spacing: 1px;
             }
         }
 
-       /* 
-
-        @media(max-width: 414px){
+        @media(max-width: 567px){
             .banner-titel h1{
-                font-size: 14px;
-                letter-spacing: 0px;
+                font-size: 28px;
+                
             }
         }
-
-
-
-        @media(max-width: 320px){
+        @media(max-width: 567px){
             .banner-titel h1{
-                font-size: 10px;
-                letter-spacing: 0px;
+                font-size: 18px;
+                
             }
         }
-
-         */
+     
 
         /* end up the baaner titel media query */
 
         /*start the below animation headline  media query */
 
+   
+       
+
         @media(min-width: 576px){
-            span.ah-headline.rotate-1{
-                 font-size: 12px; 
+            span.ah-headline.clip.is-full-width{
+                font-size: 14px;
             }
         }
-
         @media(min-width: 768px){
-            span.ah-headline.rotate-1{
-                 font-size: 18px; 
+            span.ah-headline.clip.is-full-width{
+                font-size: 19px;
             }
         }
 
         @media(min-width: 992px){
-            span.ah-headline.rotate-1{
-                 font-size: 22px; 
-            }
-        }
-
-
-       
-
-
-        @media(max-width: 767px){
             span.ah-headline.clip.is-full-width{
-                font-size: 15px;
-              }
-
-            .my-animated-headline{
-                position: absolute;
-                /* text-align: center; */
-                top: 50%;
-                left: 45%;
-                transform: translate(-50%, -50%);
-              }
-
-             
+                font-size: 21px;
+            }
         }
 
-      
-
-        @media(max-width: 575px){
+        @media(min-width: 1200px){
             span.ah-headline.clip.is-full-width{
-                font-size: 15px;
-              }
-
-            .my-animated-headline{
-                position: absolute;
-                /* text-align: center; */
-                top: 50%;
-                left: 45%;
-                transform: translate(-50%, -50%);
-              }
-
-             
+                font-size: 25px;
+            }
         }
 
-         /*
-        @media(max-width: 500px){
-            span.ah-headline.rotate-1{
-                 font-size: 11px; 
-            }
-          
-
-            .my-animated-headline{
-                position: absolute;
-                 text-align: center; 
-                top: 47%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-              }
-        }
-        
-*/
-
-      
-
-      
-
-        @media(max-width: 414px){
-            span.ah-headline.rotate-1{
-                 font-size: 17px; 
-            }
-           
-            
-        }
-
-
-        @media(max-width: 375px){
-            span.ah-headline.rotate-1{
-                 font-size: 16px; 
-            }
-            .banner-titel h1{
-                font-size: 14px;
-                
-            }
-            
-        }
-        
-        @media(max-width: 320px){
-            span.ah-headline.rotate-1{
-                 font-size: 13px; 
-            }
-            .my-animated-headline{
-                position: absolute;
-                /* text-align: center; */
-                top: 47%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-              }
-
-              .banner-titel h1{
-                font-size: 10px;
-                
-            }
-            
-        }
+    
 
         /*end up animation headline  media query */
 
@@ -734,8 +602,9 @@ margin-top: 20px;
 
              @media(min-width: 576px){
                 .banner-scoial-icon-btn i{
-                 font-size: 12px;
-                 margin: 0 5px;
+                    font-size: 24px;
+                    margin: 0 5px;
+                    padding: 7px;
             }
             .banner-scoial-icon-btn{
                 position: absolute;
@@ -750,7 +619,7 @@ margin-top: 20px;
         @media(min-width: 768px){
             .banner-scoial-icon-btn i{
                 
-                margin: 0px 13px;
+                margin: 0px 8px;
                 border: 1px solid #fff;
                 padding: 15px;
                 border-radius: 50%;
@@ -787,8 +656,17 @@ margin-top: 20px;
         padding: 7px;
 }
 
+}
+
+@media(max-width: 375px){
+    .banner-scoial-icon-btn i{
+        margin: 0 3px;
+        font-size: 12px;
+        padding: 7px;
+}
 
 }
+
 
         /*end up the banner icon baton  media query */
 

@@ -356,19 +356,19 @@ nav.sticky .logo span{
 .banner-titel h1{
   color: #fff;
   font-weight: 800;
- letter-spacing: 10px; 
+  
 }
 
 
 .short-name-color{
   color: #07f19b;
-  letter-spacing: 10px;
+  
   font-weight: 900;
 }
 
 span.ah-headline.clip.is-full-width {
   color: white;
-  font-size: 23px;
+  /* font-size: 23px; */
   font-weight: 100;
   font-family: monospace;
 }
