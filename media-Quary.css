@@ -510,6 +510,19 @@
             }
             */
         }
+
+
+        @media(max-width: 373px){
+            .banner-titel h1{
+                font-size: 18px;
+                
+            }
+
+             .banner-titel{ 
+                left: 45%;
+            }
+            
+        }
      
 
         /* end up the baaner titel media query */
@@ -552,6 +565,9 @@
                 left: 39%;
             }
         }
+
+
+     
 
     
 
@@ -665,18 +681,42 @@
         margin: 0 3px;
         font-size: 16px;
         padding: 7px;
+   
+}
+
+
+
+}
+
+/* */
+@media(max-width: 405px){
+    .banner-scoial-icon-btn i{
+        margin: 0 1px;
+        font-size: 12px;
+        padding: 7px;
 }
 
 }
 
 @media(max-width: 375px){
     .banner-scoial-icon-btn i{
-        margin: 0 3px;
+        margin: 0 1px;
         font-size: 12px;
         padding: 7px;
 }
 
+ 
+
 }
+
+@media(max-width: 328px){
+    .banner-scoial-icon-btn{
+       left: 45%;
+}
+
+}
+
+
 
 
         /*end up the banner icon baton  media query */
