@@ -1,9 +1,23 @@
  
 window.addEventListener("scroll",function(){
     var myNav = document.querySelector("nav");
-    myNav.classList.toggle("sticky", window.scrollY>80);
+    myNav.classList.toggle("sticky",  window.scrollY>80);
+    // 
+
+    
   });
 
+
+window.addEventListener("scroll",function(){
+if(window.scrollY>80){
+  document.querySelector("#img-logo").src="bootstrap-img/logo-6.png"
+}else{
+  document.querySelector("#img-logo").src="bootstrap-img/logo-5.png"
+}
+
+});
+
+ 
 //  below the line code of responsive small dive for navbar menu;
 
 

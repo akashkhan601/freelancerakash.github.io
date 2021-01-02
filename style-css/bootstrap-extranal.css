@@ -26,8 +26,23 @@ html{
   box-sizing: border-box;
   display: table;
   z-index: 100000;
-  transition: 0.6s ease;
+  transition: 1s ease;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
+
+.web-logo{
+  position: absolute;
+  top: 9px;
+}
+
+.web-logo img{
+  width: 223px;
+}
+
+
+
+/* 
 
 nav .logo{
   color: #fff;
@@ -45,12 +60,15 @@ nav .logo span{
   font-family: arial black;
 }
 
+ */
+
 nav .menu-item{
   float: right;
   margin: 0;
   padding: 0;
   display: flex;
   position: relative;
+  
 }
 
 nav .menu-item li{
@@ -273,8 +291,8 @@ li.sub-menu:hover {
 
 
 nav.sticky{
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
   background: #ffffff !important;
   transition: 0.6s ease;
   box-shadow: 0 20px 40px rgba(0,0,0,.2);
@@ -307,7 +325,7 @@ nav.sticky .menu-slide ul li{
 }
 
 nav.sticky .sub-menu2{
-  top: 120%;
+  top: 145%;
 }
 
 nav.sticky .logo{
@@ -478,6 +496,8 @@ span.ah-headline.clip.is-full-width {
     color: #000;
     border: 1px solid #07f19b;
   }
+
+
   /*----------------------------------------- start the about me style----------------------------------------- */
    
 #about-section{
