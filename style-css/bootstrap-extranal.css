@@ -37,30 +37,9 @@ html{
 }
 
 .web-logo img{
-  width: 223px;
+  width: 208px;
 }
 
-
-
-/* 
-
-nav .logo{
-  color: #fff;
-  height: 50px;
-  line-height: 50px;
-  font-size: 26px;
-  float: left;
-  font-weight: bold;
-  font-family: cursive;
-}
-
-nav .logo span{
-  color: #00fff3;
-  font-weight: 900;
-  font-family: arial black;
-}
-
- */
 
 nav .menu-item{
   float: right;

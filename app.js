@@ -7,15 +7,17 @@ window.addEventListener("scroll",function(){
     
   });
 
+  
 
 window.addEventListener("scroll",function(){
 if(window.scrollY>80){
-  document.querySelector("#img-logo").src="bootstrap-img/logo-6.png"
+  document.querySelector("#img-logo").src="bootstrap-img/my-logo-3.png"
 }else{
-  document.querySelector("#img-logo").src="bootstrap-img/logo-5.png"
+  document.querySelector("#img-logo").src="bootstrap-img/my-logo-2.png"
 }
 
 });
+
 
  
 //  below the line code of responsive small dive for navbar menu;
