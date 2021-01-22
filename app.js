@@ -11,7 +11,7 @@ window.addEventListener("scroll",function(){
 
 window.addEventListener("scroll",function(){
 if(window.scrollY>80){
-  document.querySelector("#img-logo").src="bootstrap-img/my-logo-3.png"
+  document.querySelector("#img-logo").src="bootstrap-img/my-logo-5.png"
 }else{
   document.querySelector("#img-logo").src="bootstrap-img/my-logo-2.png"
 }
